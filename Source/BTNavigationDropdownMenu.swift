@@ -455,7 +455,7 @@ public class BTNavigationDropdownMenu: UIView {
     func rotateArrow() {
         UIView.animateWithDuration(self.configuration.animationDuration, animations: {[weak self] () -> () in
             if let selfie = self {
-                selfie.menuArrow.transform = CGAffineTransformRotate(selfie.menuArrow.transform, 180 * CGFloat(M_PI/180))
+                selfie.menuArrow.transform = CGAffineTransformRotate(selfie.menuArrow.transform, 180 * CGFloat(Double.pi/180))
             }
             })
     }
